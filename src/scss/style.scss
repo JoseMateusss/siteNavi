@@ -1,0 +1,10 @@
+//criando tema de cores
+$purple:#A020F0;
+$DarkSlateBlue:#483D8B;
+$theme-colors:(
+	"purple":$purple,
+	"darkslateblue":$DarkSlateBlue
+);
+
+//importando arquivo sass
+@import "node_modules/bootstrap/scss/bootstrap";
