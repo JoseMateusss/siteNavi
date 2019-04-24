@@ -1,9 +1,11 @@
 //criando tema de cores
 $purple:#A020F0;
 $DarkSlateBlue:#483D8B;
+$SlateBlue3:#6959CD;
 $theme-colors:(
 	"purple":$purple,
-	"darkslateblue":$DarkSlateBlue
+	"darkslateblue":$DarkSlateBlue,
+	"slateblue":$SlateBlue3
 );
 
 //importando arquivo sass
