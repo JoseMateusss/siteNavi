@@ -1,12 +1,48 @@
+//importando arquivo sass
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+
 //criando tema de cores
 $purple:#A020F0;
 $DarkSlateBlue:#483D8B;
 $SlateBlue3:#6959CD;
+$white: #fff;
+$gray : #999;
+
 $theme-colors:(
 	"purple":$purple,
 	"darkslateblue":$DarkSlateBlue,
 	"slateblue":$SlateBlue3
 );
 
-//importando arquivo sass
-@import "node_modules/bootstrap/scss/bootstrap";
+.container-fluid{
+	padding: 0 10%;
+}
+
+.btn{
+	color: $DarkSlateBlue;
+	border-color: $DarkSlateBlue !important;
+}
+.btn:hover{
+	color: $white;
+	background-color: $DarkSlateBlue;
+}
+
+.btn-extravagante{
+	padding: 15px 60px;
+	border-radius: 10px;
+}
+
+p.paragrafo-sobre{
+	color: $gray;
+	font-size: 23px;
+}
+
+.sobre-navi{
+	//padding-bottom : 20p;
+	box-shadow: 1px 1px 1px $gray;
+}
+
+.projetos .projeto{
+	padding: 20px;
+}
