@@ -28,21 +28,30 @@ $theme-colors:(
 	background-color: $DarkSlateBlue;
 }
 
-.btn-extravagante{
+.btn-grande{
 	padding: 15px 60px;
 	border-radius: 10px;
 }
 
-p.paragrafo-sobre{
-	color: $gray;
-	font-size: 23px;
-}
+
 
 .sobre-navi{
-	//padding-bottom : 20p;
-	box-shadow: 1px 1px 1px $gray;
+	padding-bottom : 20px;
+
+	p{
+		color: $gray;
+		font-size: 23px;
+	}
 }
 
-.projetos .projeto{
-	padding: 20px;
+.projetos{
+	border-top: 2px solid rgba(230, 230, 230, 0.897);
+	padding-top: 100px;
+
+	.projeto{
+		padding: 30px;
+
+		
+
+	}
 }

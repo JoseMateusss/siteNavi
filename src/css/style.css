@@ -1,3 +1,10 @@
+/*!
+ * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .container {
   width: 100%;
   padding-right: 15px;
@@ -7836,18 +7843,20 @@ html {
   color: #fff;
   background-color: #483D8B; }
 
-.btn-extravagante {
+.btn-grande {
   padding: 15px 60px;
   border-radius: 10px; }
 
-p.paragrafo-sobre {
-  color: #999;
-  font-size: 23px; }
-
 .sobre-navi {
-  box-shadow: 1px 1px 1px #999; }
+  padding-bottom: 20px; }
+  .sobre-navi p {
+    color: #999;
+    font-size: 23px; }
 
-.projetos .projeto {
-  padding: 20px; }
+.projetos {
+  border-top: 2px solid rgba(230, 230, 230, 0.897);
+  padding-top: 100px; }
+  .projetos .projeto {
+    padding: 30px; }
 
 /*# sourceMappingURL=style.css.map */
