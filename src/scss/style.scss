@@ -7,7 +7,9 @@ $purple:#A020F0;
 $DarkSlateBlue:#483D8B;
 $SlateBlue3:#6959CD;
 $white: #fff;
-$gray : #999;
+$gray1: #333;
+$gray2: #666;
+$gray3: #999;
 
 $theme-colors:(
 	"purple":$purple,
@@ -22,6 +24,7 @@ $theme-colors:(
 .btn{
 	color: $DarkSlateBlue;
 	border-color: $DarkSlateBlue !important;
+	border-radius: 7px;
 }
 .btn:hover{
 	color: $white;
@@ -33,25 +36,79 @@ $theme-colors:(
 	border-radius: 10px;
 }
 
-
-
 .sobre-navi{
-	padding-bottom : 20px;
+	padding : 70px 0;
 
 	p{
-		color: $gray;
+		color: $gray3;
 		font-size: 23px;
+		margin: 50px 0;
 	}
+}
+
+h2.titulo-sessao{
+	font-size: 30px;
+	padding-bottom: 30px;
+	color: $gray2;
 }
 
 .projetos{
 	border-top: 2px solid rgba(230, 230, 230, 0.897);
-	padding-top: 100px;
+	padding: 100px 0 50px 0;
 
 	.projeto{
-		padding: 30px;
+		padding-right: 30px;
 
-		
+		img{
+			box-shadow: 0 2px 3px $gray3;
+		}
+		h3{
+			margin: 17px 0;
+			color: $gray1;
+		}
+	}
+}
 
+.noticias{
+	padding: 70px 0;
+
+	.ultima-noticia{
+		.titulo-noticia{
+			font-size: 22px;
+			margin: 20px 0;
+		}
+		p{
+			color: $gray3;
+		}
+	}
+	.outras-noticias{
+		padding-left: 35px;
+
+		a{
+			color: $gray2;
+		}
+		div.link-todas-as-noticias{
+			margin-top: 50px;
+			
+			a{
+				color: $DarkSlateBlue;
+				font-size: 20px;
+				text-decoration: underline;
+			}
+		}
+		p{
+			color: $gray3;
+		}
+	}
+}
+
+footer{
+	background-color: $DarkSlateBlue;
+
+	a,p{
+		color: $white;
+	}
+	input,textarea{
+		background-color: $DarkSlateBlue;
 	}
 }
