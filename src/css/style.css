@@ -6657,3 +6657,6 @@ footer {
       border: 1px solid #d4d3d3 !important;
       padding: 10px;
       font-size: 16px; }
+    footer .container-fluid form button:hover {
+      background-color: #d4d3d3;
+      color: #42378b; }
