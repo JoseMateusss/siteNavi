@@ -4,9 +4,10 @@
 
 //criando tema de cores
 $purple:#A020F0;
-$DarkSlateBlue:#483D8B;
+$DarkSlateBlue:rgb(66, 55, 139);
+$DarkSlateBlue2: rgb(137, 123, 240);
 $SlateBlue3:#6959CD;
-$white: #fff;
+$white: rgb(212, 211, 211);
 $gray1: #333;
 $gray2: #666;
 $gray3: #999;
@@ -31,9 +32,17 @@ $theme-colors:(
 	background-color: $DarkSlateBlue;
 }
 
-.btn-grande{
-	padding: 15px 60px;
-	border-radius: 10px;
+header{
+	nav{
+		a{
+			color: $gray2;
+			font-weight: 600;
+			text-align: center;
+		}
+		a:hover{
+			color: $gray2;
+		}
+	}
 }
 
 .sobre-navi{
@@ -43,6 +52,10 @@ $theme-colors:(
 		color: $gray3;
 		font-size: 23px;
 		margin: 50px 0;
+	}
+	.btn-grande{
+		padding: 15px 60px;
+		border-radius: 10px;
 	}
 }
 
@@ -73,6 +86,7 @@ h2.titulo-sessao{
 	padding: 70px 0;
 
 	.ultima-noticia{
+		margin-bottom: 50px;
 		.titulo-noticia{
 			font-size: 22px;
 			margin: 20px 0;
@@ -104,11 +118,77 @@ h2.titulo-sessao{
 
 footer{
 	background-color: $DarkSlateBlue;
+	padding: 50px 0;
 
-	a,p{
-		color: $white;
-	}
-	input,textarea{
-		background-color: $DarkSlateBlue;
+	.container-fluid{
+		padding: 0 8%;
+
+		img{
+			width: 55%;
+			margin-bottom: 20px;
+		}
+		h3{
+			color: $DarkSlateBlue2;
+			font-size: 23px;
+		}
+		a{
+			color: $white;
+			text-decoration: underline;
+			display: block;
+			margin-bottom: 12px;
+		}
+		a:hover{
+			color: $DarkSlateBlue2;
+		}
+		p{
+			color: $white;
+			font-size: 14px;
+			font-weight: 100;
+			margin-bottom: 20px;
+
+			strong{
+				font-weight: 600;
+			}
+		}
+		form{
+			//Alterando a cor do placeholder
+			::-webkit-input-placeholder {
+				color: $gray3;
+			}
+			:-moz-placeholder { /* Firefox 18- */
+				color: $gray3;  
+			}
+			::-moz-placeholder {  /* Firefox 19+ */
+				color: $gray3;  
+			}
+			:-ms-input-placeholder {  
+				color: $gray3;  
+			}
+			*{
+				outline: none;
+				color: $white;
+				width: 100%;
+				border: 0;
+				background-color: $DarkSlateBlue;
+				font-size: 13px;
+			}
+			input{
+				border-bottom: 1px solid white;
+				padding: 10px 5px;
+				margin-bottom: 35px;
+			}
+			textarea{
+				border-bottom: 3px solid white;
+				padding: 50px 0;
+				margin-bottom: 20px;
+				resize: none;
+			}
+			button{
+				border: 1px solid $white !important;
+				padding: 10px;
+				font-size: 16px;
+			}
+		}
 	}
 }
+
