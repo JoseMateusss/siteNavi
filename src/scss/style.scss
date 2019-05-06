@@ -4,10 +4,10 @@
 
 //criando tema de cores
 $purple:#A020F0;
-$DarkSlateBlue:rgb(66, 55, 139);
+$DarkSlateBlue:#322c68;
 $DarkSlateBlue2: rgb(137, 123, 240);
 $SlateBlue3:#6959CD;
-$white: rgb(212, 211, 211);
+$white: rgb(255, 255, 255);
 $gray1: #333;
 $gray2: #666;
 $gray3: #999;
@@ -32,6 +32,8 @@ $theme-colors:(
 	background-color: $DarkSlateBlue;
 }
 
+// Estilizando Index
+
 header{
 	nav{
 		a{
@@ -50,7 +52,7 @@ header{
 
 	p{
 		color: $gray3;
-		font-size: 23px;
+		font-size: 1.5em;
 		margin: 50px 0;
 	}
 	.btn-grande{
@@ -143,7 +145,6 @@ footer{
 		}
 		p{
 			color: $white;
-			font-size: 14px;
 			font-weight: 100;
 			margin-bottom: 20px;
 
@@ -171,7 +172,6 @@ footer{
 				width: 100%;
 				border: 0;
 				background-color: $DarkSlateBlue;
-				font-size: 13px;
 			}
 			input{
 				border-bottom: 1px solid white;
@@ -189,14 +189,88 @@ footer{
 			}
 			button{
 				border: 1px solid $white !important;
-				padding: 10px;
-				font-size: 16px;
 			}
 			button:hover{
-				background-color: $white;
-				color: $DarkSlateBlue;
+				background-color: $white !important;
+				color: $DarkSlateBlue !important;
 			}
 		}
 	}
 }
 
+// Estilizando o Noticias.html
+section.pesquisa{
+	background-color: $DarkSlateBlue;
+
+	form{
+		padding: 30px 0;
+
+		input[type=submit]{
+			background-color: $DarkSlateBlue;
+			border: 1px solid $white !important;
+			color: $white;
+		}
+		input[type=submit]:hover{
+			background-color: $white;
+			color: $DarkSlateBlue;
+		}
+	}
+}
+section.guia{
+	border-bottom: 2px solid $gray3;
+
+	.container{
+		padding: 15px 15px;
+
+		p{
+			margin: 0;
+			color: $gray3;
+
+			strong{
+				color: $DarkSlateBlue;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+section.principal{
+	
+	padding-bottom: 30px;
+
+	h2{
+		margin: 0px;
+		padding: 30px 0px 30px 15px;
+		
+	}
+
+	.noticia{
+		padding: 15px 15px;
+		border-bottom: 1px solid $gray3;
+	}
+}
+
+section.paginacao{
+	padding-bottom: 100px;
+
+	div.container{
+		ul{
+			li{
+				margin-right: 15px;
+
+				a{
+					border-color: $DarkSlateBlue;
+					padding: 10px 22px;
+					border-radius: 5px;
+					color:$DarkSlateBlue;
+				}
+				a:hover{
+					background-color: $DarkSlateBlue;
+					color: $white;
+				}
+			}
+		}
+	}
+
+	
+}
