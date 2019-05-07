@@ -8264,7 +8264,8 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 .container-fluid {
-  padding: 0 10%; }
+  padding-left: 10%;
+  padding-right: 10%; }
 
 .btn {
   color: #322c68;
@@ -8332,61 +8333,62 @@ h2.titulo-sessao {
 
 footer {
   background-color: #322c68;
-  padding: 50px 0; }
-  footer .container-fluid {
-    padding: 0 8%; }
-    footer .container-fluid img {
-      width: 55%;
-      margin-bottom: 20px; }
-    footer .container-fluid h3 {
-      color: #897bf0;
-      font-size: 23px;
-      margin-bottom: 20px; }
-    footer .container-fluid a {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  footer div.container img {
+    width: 55%;
+    margin-bottom: 20px; }
+  footer div.container h3 {
+    color: #897bf0;
+    font-size: 23px;
+    margin-bottom: 20px; }
+  footer div.container div.div-link {
+    margin-bottom: 12px; }
+    footer div.container div.div-link a {
       color: white;
       text-decoration: underline;
-      display: block;
-      margin-bottom: 12px; }
-    footer .container-fluid a:hover {
+      padding-bottom: 12px; }
+    footer div.container div.div-link a:hover {
       color: #897bf0; }
-    footer .container-fluid p {
-      color: white;
-      font-weight: 100;
-      margin-bottom: 20px; }
-      footer .container-fluid p strong {
-        font-weight: 600; }
-    footer .container-fluid form ::-webkit-input-placeholder {
-      color: #999; }
-    footer .container-fluid form :-moz-placeholder {
-      /* Firefox 18- */
-      color: #999; }
-    footer .container-fluid form ::-moz-placeholder {
-      /* Firefox 19+ */
-      color: #999; }
-    footer .container-fluid form :-ms-input-placeholder {
-      color: #999; }
-    footer .container-fluid form * {
-      outline: none;
-      color: white;
-      width: 100%;
-      border: 0;
-      background-color: #322c68; }
-    footer .container-fluid form input {
-      border-bottom: 1px solid white;
-      padding: 10px 5px;
-      margin-bottom: 35px; }
-    footer .container-fluid form input:first-of-type {
-      padding-top: 0; }
-    footer .container-fluid form textarea {
-      border-bottom: 3px solid white;
-      padding: 50px 0;
-      margin-bottom: 20px;
-      resize: none; }
-    footer .container-fluid form button {
-      border: 1px solid white !important; }
-    footer .container-fluid form button:hover {
-      background-color: white !important;
-      color: #322c68 !important; }
+  footer div.container p {
+    color: white;
+    font-weight: 100;
+    margin-bottom: 20px; }
+    footer div.container p strong {
+      font-weight: 600; }
+  footer div.container form ::-webkit-input-placeholder {
+    color: #999; }
+  footer div.container form :-moz-placeholder {
+    /* Firefox 18- */
+    color: #999; }
+  footer div.container form ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #999; }
+  footer div.container form :-ms-input-placeholder {
+    color: #999; }
+  footer div.container form * {
+    outline: none;
+    color: white;
+    width: 100%;
+    border: 0;
+    background-color: #322c68; }
+  footer div.container form input {
+    border-bottom: 1px solid white;
+    padding: 10px 5px;
+    margin-bottom: 35px; }
+  footer div.container form input:first-of-type {
+    padding-top: 0; }
+  footer div.container form textarea {
+    border-bottom: 3px solid white;
+    padding: 50px 0;
+    margin-bottom: 20px;
+    resize: none; }
+  footer div.container form button {
+    border: 1px solid white !important;
+    padding: 15px 30px; }
+  footer div.container form button:hover {
+    background-color: white !important;
+    color: #322c68 !important; }
 
 section.pesquisa {
   background-color: #322c68; }
@@ -8413,11 +8415,11 @@ section.guia {
 
 section.principal {
   padding-bottom: 30px; }
-  section.principal h2 {
+  section.principal h1 {
     margin: 0px;
-    padding: 30px 0px 30px 15px; }
+    padding: 30px 0px 30px 0px; }
   section.principal .noticia {
-    padding: 15px 15px;
+    padding: 15px 0;
     border-bottom: 1px solid #999; }
 
 section.paginacao {
@@ -8432,5 +8434,27 @@ section.paginacao {
     section.paginacao div.container ul li a:hover {
       background-color: #322c68;
       color: white; }
+
+div.titulo {
+  border-bottom: 2px solid #999; }
+
+div.publicacao {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #999; }
+
+div.legenda {
+  padding-bottom: 35px; }
+
+div.outrasnoticias {
+  padding-bottom: 15px;
+  padding-top: 10px;
+  border-bottom: 1px solid #999; }
+  div.outrasnoticias a {
+    color: #333;
+    font-size: 23px; }
+
+div.noticias {
+  padding-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */

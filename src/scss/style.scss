@@ -19,7 +19,8 @@ $theme-colors:(
 );
 
 .container-fluid{
-	padding: 0 10%;
+	padding-left: 10%;
+	padding-right: 10%; 
 }
 
 .btn{
@@ -33,7 +34,6 @@ $theme-colors:(
 }
 
 // Estilizando Index
-
 header{
 	nav{
 		a{
@@ -111,19 +111,19 @@ h2.titulo-sessao{
 				font-size: 20px;
 				text-decoration: underline;
 			}
-		}
-		p{
-			color: $gray3;
-		}
+			}
+			p{
+				color: $gray3;
+			}
 	}
 }
 
 footer{
 	background-color: $DarkSlateBlue;
-	padding: 50px 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
-	.container-fluid{
-		padding: 0 8%;
+	div.container{
 
 		img{
 			width: 55%;
@@ -134,15 +134,19 @@ footer{
 			font-size: 23px;
 			margin-bottom: 20px;
 		}
-		a{
-			color: $white;
-			text-decoration: underline;
-			display: block;
+		div.div-link{
 			margin-bottom: 12px;
+
+			a{
+				color: $white;
+				text-decoration: underline;
+				padding-bottom: 12px;
+			}
+			a:hover{
+				color: $DarkSlateBlue2;
+			}
 		}
-		a:hover{
-			color: $DarkSlateBlue2;
-		}
+		
 		p{
 			color: $white;
 			font-weight: 100;
@@ -189,6 +193,7 @@ footer{
 			}
 			button{
 				border: 1px solid $white !important;
+				padding: 15px 30px;
 			}
 			button:hover{
 				background-color: $white !important;
@@ -238,14 +243,14 @@ section.principal{
 	
 	padding-bottom: 30px;
 
-	h2{
+	h1{
 		margin: 0px;
-		padding: 30px 0px 30px 15px;
+		padding: 30px 0px 30px 0px;
 		
 	}
 
 	.noticia{
-		padding: 15px 15px;
+		padding: 15px 0;
 		border-bottom: 1px solid $gray3;
 	}
 }
@@ -271,6 +276,35 @@ section.paginacao{
 			}
 		}
 	}
+}
 
-	
+// Estilizando o Post.html
+
+div.titulo{
+	border-bottom: 2px solid $gray3;
+}
+
+div.publicacao{
+	padding-top: 30px;
+	padding-bottom: 70px;
+	border-bottom: 2px solid $gray3;
+
+}
+
+div.legenda{
+	padding-bottom: 35px;
+}
+
+div.outrasnoticias{
+	padding-bottom: 15px;
+	padding-top: 10px;
+	border-bottom: 1px solid $gray3;
+	a{
+		color:$gray1;
+		font-size: 23px;
+	}
+}
+
+div.noticias{
+	padding-top:20px;
 }
