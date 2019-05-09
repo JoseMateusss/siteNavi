@@ -11,6 +11,8 @@ $white: rgb(255, 255, 255);
 $gray1: #333;
 $gray2: #666;
 $gray3: #999;
+$gray4: #ccc;
+$gray5: rgb(245,245,245);
 
 $theme-colors:(
 	"purple":$purple,
@@ -18,9 +20,17 @@ $theme-colors:(
 	"slateblue":$SlateBlue3
 );
 
+body{
+	background-color: $gray5;
+}
+
 .container-fluid{
 	padding-left: 10%;
 	padding-right: 10%; 
+}
+
+div.clear{
+	clear: both;
 }
 
 .btn{
@@ -35,6 +45,9 @@ $theme-colors:(
 
 // Estilizando Index
 header{
+	background-color: $white;
+	box-shadow: 3px 3px 3px $gray4;
+
 	nav{
 		a{
 			color: $gray2;
@@ -47,7 +60,8 @@ header{
 	}
 }
 
-.sobre-navi{
+.index-sobre-navi{
+	background-color: $white;
 	padding : 70px 0;
 
 	p{
@@ -61,13 +75,13 @@ header{
 	}
 }
 
-h2.titulo-sessao{
+.index-titulo-sessao{
 	font-size: 30px;
 	padding-bottom: 30px;
 	color: $gray2;
 }
 
-.projetos{
+.index-projetos{
 	border-top: 2px solid rgba(230, 230, 230, 0.897);
 	padding: 100px 0 50px 0;
 
@@ -84,7 +98,8 @@ h2.titulo-sessao{
 	}
 }
 
-.noticias{
+.index-noticias{
+	background-color: $white;
 	padding: 70px 0;
 
 	.ultima-noticia{
@@ -118,7 +133,7 @@ h2.titulo-sessao{
 	}
 }
 
-footer{
+footer.index{
 	background-color: $DarkSlateBlue;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -204,7 +219,7 @@ footer{
 }
 
 // Estilizando o Noticias.html
-section.pesquisa{
+.noticias-pesquisa{
 	background-color: $DarkSlateBlue;
 
 	form{
@@ -221,7 +236,7 @@ section.pesquisa{
 		}
 	}
 }
-section.guia{
+.noticias-guia{
 	border-bottom: 2px solid $gray3;
 
 	.container{
@@ -239,7 +254,7 @@ section.guia{
 	}
 }
 
-section.principal{
+.noticias-principal{
 	
 	padding-bottom: 30px;
 
@@ -255,7 +270,7 @@ section.principal{
 	}
 }
 
-section.paginacao{
+.noticias-paginacao{
 	padding-bottom: 100px;
 
 	div.container{
@@ -279,32 +294,135 @@ section.paginacao{
 }
 
 // Estilizando o Post.html
+.post-cabecalho{
+	padding: 30px;
 
-div.titulo{
-	border-bottom: 2px solid $gray3;
+	.post-titulo{
+		border-bottom: 2px solid $gray3;
+		
+		h1{
+			font-size: 2.6em;
+		}
+	}
 }
-
-div.publicacao{
+.post-publicacao{
 	padding-top: 30px;
 	padding-bottom: 70px;
 	border-bottom: 2px solid $gray3;
 
 }
 
-div.legenda{
+.post-legenda{
 	padding-bottom: 35px;
 }
 
-div.outrasnoticias{
-	padding-bottom: 15px;
-	padding-top: 10px;
-	border-bottom: 1px solid $gray3;
-	a{
-		color:$gray1;
-		font-size: 23px;
+div.noticias{
+	padding-top:30px;
+
+	h2{
+		margin-bottom: 20px;
+		color: $gray2;
+		font-size: 2em;
+	}
+
+	.post-outrasnoticias{
+		padding-bottom: 15px;
+		padding-top: 10px;
+		border-bottom: 1px solid $gray4;
+		margin-bottom: 10px;
+
+		div{
+			margin-bottom: 15px;
+		}
+		a{
+			color:$gray1;
+			font-size: 23px;
+		}
 	}
 }
 
-div.noticias{
-	padding-top:20px;
+// Estilizando o Sobre.html
+.sobre-somos-navi{
+	padding-top: 30px;
+
+	.cabecalho{
+		border-bottom: 1px solid $gray4;
+		margin-bottom: 20px;
+		color: $gray3;
+
+		h1{
+			font-size: 2em;
+			color: black;
+		}
+	}
+	.box-imagem{
+		p{
+			color: $gray3;
+		}
+	}
+}
+
+.sobre-quem-faz{
+	div.professores{
+		div.projessor{
+			width: 33%;
+			padding: 10px;
+			float: left;
+		}
+	}
+}
+
+/*
+@media screen and (max-width:700px){
+
+	.sobre-quem-faz{
+		div.professores{
+			div.projessor{
+				width: 50%;
+			}
+		}
+	}
+}
+*/
+
+.sobre-projetos{
+	background-color: $gray5;
+
+	h2{
+		margin-bottom: 30px;
+	}
+	.projetos{
+		margin-top: 40px;
+		margin-bottom: 30px;
+
+		.projeto{
+			padding-right: 30px;
+	
+			img{
+				box-shadow: 0 2px 3px $gray3;
+			}
+			h3{
+				margin: 17px 0;
+				color: $gray1;
+			}
+		}
+	}
+	
+}
+
+.sobre-premios{
+	background-color: $gray5;
+	margin-bottom: 40px;
+	
+	h2{
+		margin-bottom: 20px;
+	}
+}
+
+.sobre-parceiros{
+	background-color: $gray5;
+
+	h2{
+		margin-bottom: 20px;
+	}
 }

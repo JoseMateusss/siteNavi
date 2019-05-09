@@ -8263,9 +8263,15 @@ html {
   .ml-xl-auto,
   .mx-xl-auto {
     margin-left: auto !important; } }
+body {
+  background-color: whitesmoke; }
+
 .container-fluid {
   padding-left: 10%;
   padding-right: 10%; }
+
+div.clear {
+  clear: both; }
 
 .btn {
   color: #322c68;
@@ -8276,185 +8282,255 @@ html {
   color: white;
   background-color: #322c68; }
 
-header nav a {
-  color: #666;
-  font-weight: 600;
-  text-align: center; }
-header nav a:hover {
-  color: #666; }
+header {
+  background-color: white;
+  box-shadow: 3px 3px 3px #ccc; }
+  header nav a {
+    color: #666;
+    font-weight: 600;
+    text-align: center; }
+  header nav a:hover {
+    color: #666; }
 
-.sobre-navi {
+.index-sobre-navi {
+  background-color: white;
   padding: 70px 0; }
-  .sobre-navi p {
+  .index-sobre-navi p {
     color: #999;
     font-size: 1.5em;
     margin: 50px 0; }
-  .sobre-navi .btn-grande {
+  .index-sobre-navi .btn-grande {
     padding: 15px 60px;
     border-radius: 10px; }
 
-h2.titulo-sessao {
+.index-titulo-sessao {
   font-size: 30px;
   padding-bottom: 30px;
   color: #666; }
 
-.projetos {
+.index-projetos {
   border-top: 2px solid rgba(230, 230, 230, 0.897);
   padding: 100px 0 50px 0; }
-  .projetos .projeto {
+  .index-projetos .projeto {
     padding-right: 30px; }
-    .projetos .projeto img {
+    .index-projetos .projeto img {
       box-shadow: 0 2px 3px #999; }
-    .projetos .projeto h3 {
+    .index-projetos .projeto h3 {
       margin: 17px 0;
       color: #333; }
 
-.noticias {
+.index-noticias {
+  background-color: white;
   padding: 70px 0; }
-  .noticias .ultima-noticia {
+  .index-noticias .ultima-noticia {
     margin-bottom: 50px; }
-    .noticias .ultima-noticia .titulo-noticia {
+    .index-noticias .ultima-noticia .titulo-noticia {
       font-size: 22px;
       margin: 20px 0; }
-    .noticias .ultima-noticia p {
+    .index-noticias .ultima-noticia p {
       color: #999; }
-  .noticias .outras-noticias {
+  .index-noticias .outras-noticias {
     padding-left: 35px; }
-    .noticias .outras-noticias a {
+    .index-noticias .outras-noticias a {
       color: #666; }
-    .noticias .outras-noticias div.link-todas-as-noticias {
+    .index-noticias .outras-noticias div.link-todas-as-noticias {
       margin-top: 50px; }
-      .noticias .outras-noticias div.link-todas-as-noticias a {
+      .index-noticias .outras-noticias div.link-todas-as-noticias a {
         color: #322c68;
         font-size: 20px;
         text-decoration: underline; }
-    .noticias .outras-noticias p {
+    .index-noticias .outras-noticias p {
       color: #999; }
 
-footer {
+footer.index {
   background-color: #322c68;
   padding-top: 50px;
   padding-bottom: 50px; }
-  footer div.container img {
+  footer.index div.container img {
     width: 55%;
     margin-bottom: 20px; }
-  footer div.container h3 {
+  footer.index div.container h3 {
     color: #897bf0;
     font-size: 23px;
     margin-bottom: 20px; }
-  footer div.container div.div-link {
+  footer.index div.container div.div-link {
     margin-bottom: 12px; }
-    footer div.container div.div-link a {
+    footer.index div.container div.div-link a {
       color: white;
       text-decoration: underline;
       padding-bottom: 12px; }
-    footer div.container div.div-link a:hover {
+    footer.index div.container div.div-link a:hover {
       color: #897bf0; }
-  footer div.container p {
+  footer.index div.container p {
     color: white;
     font-weight: 100;
     margin-bottom: 20px; }
-    footer div.container p strong {
+    footer.index div.container p strong {
       font-weight: 600; }
-  footer div.container form ::-webkit-input-placeholder {
+  footer.index div.container form ::-webkit-input-placeholder {
     color: #999; }
-  footer div.container form :-moz-placeholder {
+  footer.index div.container form :-moz-placeholder {
     /* Firefox 18- */
     color: #999; }
-  footer div.container form ::-moz-placeholder {
+  footer.index div.container form ::-moz-placeholder {
     /* Firefox 19+ */
     color: #999; }
-  footer div.container form :-ms-input-placeholder {
+  footer.index div.container form :-ms-input-placeholder {
     color: #999; }
-  footer div.container form * {
+  footer.index div.container form * {
     outline: none;
     color: white;
     width: 100%;
     border: 0;
     background-color: #322c68; }
-  footer div.container form input {
+  footer.index div.container form input {
     border-bottom: 1px solid white;
     padding: 10px 5px;
     margin-bottom: 35px; }
-  footer div.container form input:first-of-type {
+  footer.index div.container form input:first-of-type {
     padding-top: 0; }
-  footer div.container form textarea {
+  footer.index div.container form textarea {
     border-bottom: 3px solid white;
     padding: 50px 0;
     margin-bottom: 20px;
     resize: none; }
-  footer div.container form button {
+  footer.index div.container form button {
     border: 1px solid white !important;
     padding: 15px 30px; }
-  footer div.container form button:hover {
+  footer.index div.container form button:hover {
     background-color: white !important;
     color: #322c68 !important; }
 
-section.pesquisa {
+.noticias-pesquisa {
   background-color: #322c68; }
-  section.pesquisa form {
+  .noticias-pesquisa form {
     padding: 30px 0; }
-    section.pesquisa form input[type=submit] {
+    .noticias-pesquisa form input[type=submit] {
       background-color: #322c68;
       border: 1px solid white !important;
       color: white; }
-    section.pesquisa form input[type=submit]:hover {
+    .noticias-pesquisa form input[type=submit]:hover {
       background-color: white;
       color: #322c68; }
 
-section.guia {
+.noticias-guia {
   border-bottom: 2px solid #999; }
-  section.guia .container {
+  .noticias-guia .container {
     padding: 15px 15px; }
-    section.guia .container p {
+    .noticias-guia .container p {
       margin: 0;
       color: #999; }
-      section.guia .container p strong {
+      .noticias-guia .container p strong {
         color: #322c68;
         text-decoration: underline; }
 
-section.principal {
+.noticias-principal {
   padding-bottom: 30px; }
-  section.principal h1 {
+  .noticias-principal h1 {
     margin: 0px;
     padding: 30px 0px 30px 0px; }
-  section.principal .noticia {
+  .noticias-principal .noticia {
     padding: 15px 0;
     border-bottom: 1px solid #999; }
 
-section.paginacao {
+.noticias-paginacao {
   padding-bottom: 100px; }
-  section.paginacao div.container ul li {
+  .noticias-paginacao div.container ul li {
     margin-right: 15px; }
-    section.paginacao div.container ul li a {
+    .noticias-paginacao div.container ul li a {
       border-color: #322c68;
       padding: 10px 22px;
       border-radius: 5px;
       color: #322c68; }
-    section.paginacao div.container ul li a:hover {
+    .noticias-paginacao div.container ul li a:hover {
       background-color: #322c68;
       color: white; }
 
-div.titulo {
-  border-bottom: 2px solid #999; }
+.post-cabecalho {
+  padding: 30px; }
+  .post-cabecalho .post-titulo {
+    border-bottom: 2px solid #999; }
+    .post-cabecalho .post-titulo h1 {
+      font-size: 2.6em; }
 
-div.publicacao {
+.post-publicacao {
   padding-top: 30px;
   padding-bottom: 70px;
   border-bottom: 2px solid #999; }
 
-div.legenda {
+.post-legenda {
   padding-bottom: 35px; }
 
-div.outrasnoticias {
-  padding-bottom: 15px;
-  padding-top: 10px;
-  border-bottom: 1px solid #999; }
-  div.outrasnoticias a {
-    color: #333;
-    font-size: 23px; }
-
 div.noticias {
-  padding-top: 20px; }
+  padding-top: 30px; }
+  div.noticias h2 {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 2em; }
+  div.noticias .post-outrasnoticias {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px; }
+    div.noticias .post-outrasnoticias div {
+      margin-bottom: 15px; }
+    div.noticias .post-outrasnoticias a {
+      color: #333;
+      font-size: 23px; }
+
+.sobre-somos-navi {
+  padding-top: 30px; }
+  .sobre-somos-navi .cabecalho {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    color: #999; }
+    .sobre-somos-navi .cabecalho h1 {
+      font-size: 2em;
+      color: black; }
+  .sobre-somos-navi .box-imagem p {
+    color: #999; }
+
+.sobre-quem-faz div.professores div.projessor {
+  width: 33%;
+  padding: 10px;
+  float: left; }
+
+/*
+@media screen and (max-width:700px){
+
+	.sobre-quem-faz{
+		div.professores{
+			div.projessor{
+				width: 50%;
+			}
+		}
+	}
+}
+*/
+.sobre-projetos {
+  background-color: whitesmoke; }
+  .sobre-projetos h2 {
+    margin-bottom: 30px; }
+  .sobre-projetos .projetos {
+    margin-top: 40px;
+    margin-bottom: 30px; }
+    .sobre-projetos .projetos .projeto {
+      padding-right: 30px; }
+      .sobre-projetos .projetos .projeto img {
+        box-shadow: 0 2px 3px #999; }
+      .sobre-projetos .projetos .projeto h3 {
+        margin: 17px 0;
+        color: #333; }
+
+.sobre-premios {
+  background-color: whitesmoke;
+  margin-bottom: 40px; }
+  .sobre-premios h2 {
+    margin-bottom: 20px; }
+
+.sobre-parceiros {
+  background-color: whitesmoke; }
+  .sobre-parceiros h2 {
+    margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
