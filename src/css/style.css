@@ -8479,38 +8479,32 @@ div.noticias {
       font-size: 23px; }
 
 .sobre-somos-navi {
-  padding-top: 30px; }
+  padding-top: 30px;
+  margin-bottom: 60px; }
   .sobre-somos-navi .cabecalho {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     color: #999; }
     .sobre-somos-navi .cabecalho h1 {
-      font-size: 2em;
+      font-size: 3em;
       color: black; }
   .sobre-somos-navi .box-imagem p {
     color: #999; }
 
-.sobre-quem-faz div.professores div.projessor {
-  width: 33%;
-  padding: 10px;
-  float: left; }
+.sobre-quem-faz {
+  margin-bottom: 60px; }
+  .sobre-quem-faz h2 {
+    margin-bottom: 20px;
+    font-size: 2em; }
+  .sobre-quem-faz div.participante img {
+    width: 100%; }
 
-/*
-@media screen and (max-width:700px){
-
-	.sobre-quem-faz{
-		div.professores{
-			div.projessor{
-				width: 50%;
-			}
-		}
-	}
-}
-*/
 .sobre-projetos {
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  margin-bottom: 60px; }
   .sobre-projetos h2 {
-    margin-bottom: 30px; }
+    margin-bottom: 20px;
+    font-size: 2em; }
   .sobre-projetos .projetos {
     margin-top: 40px;
     margin-bottom: 30px; }
@@ -8524,13 +8518,16 @@ div.noticias {
 
 .sobre-premios {
   background-color: whitesmoke;
-  margin-bottom: 40px; }
+  margin-bottom: 60px; }
   .sobre-premios h2 {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 2em; }
 
 .sobre-parceiros {
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  margin-bottom: 60px; }
   .sobre-parceiros h2 {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 2em; }
 
 /*# sourceMappingURL=style.css.map */

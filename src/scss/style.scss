@@ -344,6 +344,7 @@ div.noticias{
 // Estilizando o Sobre.html
 .sobre-somos-navi{
 	padding-top: 30px;
+	margin-bottom: 60px;
 
 	.cabecalho{
 		border-bottom: 1px solid $gray4;
@@ -351,7 +352,7 @@ div.noticias{
 		color: $gray3;
 
 		h1{
-			font-size: 2em;
+			font-size: 3em;
 			color: black;
 		}
 	}
@@ -363,33 +364,26 @@ div.noticias{
 }
 
 .sobre-quem-faz{
-	div.professores{
-		div.projessor{
-			width: 33%;
-			padding: 10px;
-			float: left;
+	margin-bottom: 60px;
+	h2{
+		margin-bottom: 20px;
+		font-size: 2em;
+	}
+
+	div.participante{
+		img{
+			width: 100%;
 		}
 	}
 }
-
-/*
-@media screen and (max-width:700px){
-
-	.sobre-quem-faz{
-		div.professores{
-			div.projessor{
-				width: 50%;
-			}
-		}
-	}
-}
-*/
 
 .sobre-projetos{
 	background-color: $gray5;
+	margin-bottom: 60px;
 
 	h2{
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+		font-size: 2em;
 	}
 	.projetos{
 		margin-top: 40px;
@@ -412,17 +406,20 @@ div.noticias{
 
 .sobre-premios{
 	background-color: $gray5;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 	
 	h2{
 		margin-bottom: 20px;
+		font-size: 2em;
 	}
 }
 
 .sobre-parceiros{
 	background-color: $gray5;
+	margin-bottom: 60px;
 
 	h2{
 		margin-bottom: 20px;
+		font-size: 2em;
 	}
 }
